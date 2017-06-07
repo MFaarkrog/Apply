@@ -1,5 +1,5 @@
 PODS:
-  - Apply (0.1.0)
+  - Apply (0.0.1)
 
 DEPENDENCIES:
   - Apply (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Apply: 45aa14d9c1368cb7ecb520ad6b047c679fb3f8e0
+  Apply: aa06cb740f19ed13a6951cef1a77f98ed262df89
 
 PODFILE CHECKSUM: f7bf0de7281cde1987471776d59b6825ea2ff343
 
