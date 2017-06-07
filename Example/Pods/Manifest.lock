@@ -1,0 +1,16 @@
+PODS:
+  - Apply (0.1.0)
+
+DEPENDENCIES:
+  - Apply (from `../`)
+
+EXTERNAL SOURCES:
+  Apply:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Apply: 1275cc848a2349b72a48845506b88ce22bd65070
+
+PODFILE CHECKSUM: f7bf0de7281cde1987471776d59b6825ea2ff343
+
+COCOAPODS: 1.2.1

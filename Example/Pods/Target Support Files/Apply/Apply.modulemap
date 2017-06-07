@@ -1,0 +1,6 @@
+framework module Apply {
+  umbrella header "Apply-umbrella.h"
+
+  export *
+  module * { export * }
+}

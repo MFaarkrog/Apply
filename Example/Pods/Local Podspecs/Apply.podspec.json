@@ -1,0 +1,22 @@
+{
+  "name": "Apply",
+  "version": "0.1.0",
+  "summary": "A short description of Apply.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Morten Faarkrog/Apply",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Morten Faarkrog": "morten@adaptmobile.dk"
+  },
+  "source": {
+    "git": "https://github.com/Morten Faarkrog/Apply.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Apply/Classes/**/*"
+}

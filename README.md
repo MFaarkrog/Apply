@@ -22,7 +22,7 @@ pod "Apply"
 
 ## Author
 
-Morten Faarkrog, morten@adaptmobile.dk
+Morten Faarkrog, mortenfaarkrog@gmail.com
 
 ## License
 
