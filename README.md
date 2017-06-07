@@ -1,6 +1,4 @@
 # Apply
-
-[![CI Status](http://img.shields.io/travis/Morten Faarkrog/Apply.svg?style=flat)](https://travis-ci.org/Morten Faarkrog/Apply)
 [![Version](https://img.shields.io/cocoapods/v/Apply.svg?style=flat)](http://cocoapods.org/pods/Apply)
 [![License](https://img.shields.io/cocoapods/l/Apply.svg?style=flat)](http://cocoapods.org/pods/Apply)
 [![Platform](https://img.shields.io/cocoapods/p/Apply.svg?style=flat)](http://cocoapods.org/pods/Apply)
