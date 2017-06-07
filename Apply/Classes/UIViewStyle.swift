@@ -12,6 +12,10 @@ public struct UIViewStyle<T: UIView> {
   /// and performs side-effects on it.
   public let styling: (T)->Void
   
+  public init(styling: @escaping (T)->Void) {
+    self.styling = styling
+  }
+  
   /// A factory method that composes multiple styles.
   ///
   /// - Parameter styles: The styles to compose.
@@ -63,4 +67,5 @@ public struct UIViewStyle<T: UIView> {
       styling(view)
     }
   }
+
 }
