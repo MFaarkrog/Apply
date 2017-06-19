@@ -196,7 +196,7 @@ Another example where interchangeable themes has been utilized can be seen in th
 
 ## Author
 
-Morten Faarkrog, mortenfaarkrog@gmail.com
+Morten Faarkrog, [@MFaarkrog](https://twitter.com/mfaarkrog)
 
 ## License
 
