@@ -15,8 +15,9 @@ struct Theme {
     let primary: UIColor
     let secondary: UIColor
     let text: UIColor
-    let edge: UIColor
+    let textAlt: UIColor
     let background: UIColor
+    let backgroundAlt: UIColor
   }
   
   struct Fonts {
@@ -36,7 +37,7 @@ struct Theme {
     
     // Components
     let roundedViewStyle: UIViewStyle<UIView>
-    let edgedViewStyle: UIViewStyle<UIView>
+    let solidButtonSizeStyle: UIViewStyle<UIButton>
   }
   
   let fonts: Fonts

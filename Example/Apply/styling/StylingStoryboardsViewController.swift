@@ -10,40 +10,47 @@ import UIKit
 
 class StylingStoryboardsViewController: UIViewController {
   
-  @IBOutlet weak var initialsContainerView: UIView! {
+  @IBOutlet weak var containerView: UIView! {
     didSet {
-      initialsContainerView
+      containerView
         .apply(style: Stylesheet.current.styles.roundedViewStyle)
-        .apply(backgroundColor: Stylesheet.current.colors.primary)
+        .apply(backgroundColor: Stylesheet.current.colors.background)
     }
   }
   
-  @IBOutlet weak var initialsLabel: UILabel! {
+  @IBOutlet weak var titleLabel: UILabel! {
     didSet {
-      initialsLabel
+      titleLabel
         .apply(style: Stylesheet.current.styles.titleLabel)
-        .apply(text: "MF")
+        .apply(text: "Styling made simple")
     }
   }
   
-  @IBOutlet weak var nameLabel: UILabel! {
+  @IBOutlet weak var descriptionLabel: UILabel! {
     didSet {
-      nameLabel
+      descriptionLabel
         .apply(style: Stylesheet.current.styles.subtitleLabel)
-        .apply(textAlignment: .left)
-        .apply(text: "Morten Faarkrog")
+        .apply(text: "With apply you can easily setup styles for your application and change them on the go.\nSimple and convenient! 🎉")
     }
   }
   
-  @IBOutlet weak var followButton: UIButton! {
+  @IBOutlet weak var confirmButton: UIButton! {
     didSet {
-      followButton
+      confirmButton
         .apply(style: Stylesheet.current.styles.primaryActionButton)
-        .apply(title: "Follow now")
+        .apply(title: "Awesome 👍")
+    }
+  }
+  
+  @IBOutlet weak var denyButton: UIButton! {
+    didSet {
+      denyButton
+        .apply(style: Stylesheet.current.styles.secondaryActionButton)
+        .apply(title: "Meh, not impressed")
     }
   }
   
   override func viewDidLoad() {
-    view.backgroundColor = Stylesheet.current.colors.background
+    view.backgroundColor = Stylesheet.current.colors.backgroundAlt
   }
 }

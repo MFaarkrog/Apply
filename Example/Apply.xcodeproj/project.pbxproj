@@ -16,6 +16,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9B231FF21EE7F0DC0047B1B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B231FF11EE7F0DC0047B1B1 /* Theme.swift */; };
 		9B231FF41EE7F1000047B1B1 /* StylingStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B231FF31EE7F1000047B1B1 /* StylingStylesheet.swift */; };
+		9B23AA3B1EF177DB00B6013A /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23AA3A1EF177DB00B6013A /* UIView+Convenience.swift */; };
 		9B4147AD1EE7E26C00E96B6B /* SimpleCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4147A81EE7E26C00E96B6B /* SimpleCodeViewController.swift */; };
 		9B4147AE1EE7E26C00E96B6B /* SimpleStoryboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4147A91EE7E26C00E96B6B /* SimpleStoryboardsViewController.swift */; };
 		9B4147AF1EE7E26C00E96B6B /* StylingCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4147AB1EE7E26C00E96B6B /* StylingCodeViewController.swift */; };
@@ -50,6 +51,7 @@
 		72A6FB4BD6B161CFEB603024 /* Apply.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Apply.podspec; path = ../Apply.podspec; sourceTree = "<group>"; };
 		9B231FF11EE7F0DC0047B1B1 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9B231FF31EE7F1000047B1B1 /* StylingStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylingStylesheet.swift; sourceTree = "<group>"; };
+		9B23AA3A1EF177DB00B6013A /* UIView+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Convenience.swift"; sourceTree = "<group>"; };
 		9B4147A81EE7E26C00E96B6B /* SimpleCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCodeViewController.swift; sourceTree = "<group>"; };
 		9B4147A91EE7E26C00E96B6B /* SimpleStoryboardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStoryboardsViewController.swift; sourceTree = "<group>"; };
 		9B4147AB1EE7E26C00E96B6B /* StylingCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylingCodeViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				9B4147AA1EE7E26C00E96B6B /* styling */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* HomeViewController.swift */,
+				9B23AA3A1EF177DB00B6013A /* UIView+Convenience.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -403,6 +406,7 @@
 				9B231FF41EE7F1000047B1B1 /* StylingStylesheet.swift in Sources */,
 				9B4147AD1EE7E26C00E96B6B /* SimpleCodeViewController.swift in Sources */,
 				9B4147B01EE7E26C00E96B6B /* StylingStoryboardsViewController.swift in Sources */,
+				9B23AA3B1EF177DB00B6013A /* UIView+Convenience.swift in Sources */,
 				9B4147AE1EE7E26C00E96B6B /* SimpleStoryboardsViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
 				9B4147B21EE7E58200E96B6B /* SimpleStylesheet.swift in Sources */,

@@ -18,7 +18,6 @@ class SimpleCodeViewController: UIViewController {
     .apply(text: "Apply")
     .apply(translatesAutoresizingMaskIntoConstraints: false)
   
-  
   private let subtitleLabel: UILabel = UILabel()
     .apply(font: Styles.Fonts.h2)
     .apply(textColor: Styles.Colors.secondary)
@@ -47,8 +46,7 @@ class SimpleCodeViewController: UIViewController {
   private func setupView() {
     title = "Simple (Code)"
     view.backgroundColor = Styles.Colors.background
-    
-    [titleLabel, subtitleLabel, actionButton].forEach { view.addSubview($0) }
+    view.addSubviews([titleLabel, subtitleLabel, actionButton])
     constrainViews()
   }
   

@@ -11,6 +11,10 @@ import Apply
 
 class HomeViewController: UIViewController {
   
+  @IBAction func switchDidTouch(_ sender: UISwitch) {
+    Stylesheet.toggleTheme()
+  }
+  
   @IBAction func simpleCodeButtonDidTouch(_ sender: Any) {
     let simpleCodeVC = SimpleCodeViewController()
     navigationController?.pushViewController(simpleCodeVC, animated: true)
@@ -30,4 +34,3 @@ class HomeViewController: UIViewController {
   }
   
 }
-

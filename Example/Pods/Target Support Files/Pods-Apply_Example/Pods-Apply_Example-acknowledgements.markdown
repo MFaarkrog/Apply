@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Apply
 
-Copyright (c) 2017 Morten Faarkrog <morten@adaptmobile.dk>
+Copyright (c) 2017 Morten Faarkrog <mortenfaarkrog@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
