@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Apply'
   s.version          = '0.1.0'
-  s.summary          = 'Summary coming soon.'
+  s.summary          = 'A framework for making it easier to create, change, and maintain the UI of your iOS applications.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Description coming soon...
+A framework for making it easier to create, change, and maintain the UI of your iOS applications.
                        DESC
 
   s.homepage         = 'https://github.com/MFaarkrog/Apply'

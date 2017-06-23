@@ -16,18 +16,28 @@ public extension UIButton {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIButton>(contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> T {
+    self.contentHorizontalAlignment = contentHorizontalAlignment
+    return self as! T
+  }
+  
+  @discardableResult public func apply<T: UIButton>(contentVerticalAlignment: UIControlContentVerticalAlignment) -> T {
+    self.contentVerticalAlignment = contentVerticalAlignment
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIButton>(image: UIImage?, forState state: UIControlState = .normal) -> T {
     self.setImage(image, for: state)
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIButton>(titleEdgeInsets: UIEdgeInsets) -> T {
-    self.titleEdgeInsets = titleEdgeInsets
+  @discardableResult public func apply<T: UIButton>(title: String, forState state: UIControlState = .normal) -> T {
+    self.setTitle(title, for: state)
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIButton>(title: String, forState state: UIControlState = .normal) -> T {
-    self.setTitle(title, for: state)
+  @discardableResult public func apply<T: UIButton>(titleEdgeInsets: UIEdgeInsets) -> T {
+    self.titleEdgeInsets = titleEdgeInsets
     return self as! T
   }
   
