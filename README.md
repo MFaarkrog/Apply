@@ -106,7 +106,7 @@ lazy var stackView: UIStackView = {
 
 ### Styling
 
-**Apply a style**
+#### Apply a style
 Quite often, you find yourself having to reuse the same styling for your view elements throughout your application. With Apply, setting up and applying styles is super simple. 
 Somewhere in your application you define view styles that can be applied to UI elements of a certain type. 
 
@@ -123,7 +123,7 @@ let titleLabel = UILabel()
   .apply(text: "#verytitle”)
 ```
 
-**Combine and apply styles**
+#### Combine and apply styles
 To make it even easier to read, create, change, and maintain styles they have been set up in such a way that they can be combined.  
 
 ```swift
@@ -196,7 +196,7 @@ Another example where interchangeable themes has been utilized can be seen in th
 
 ## Author
 
-Morten Faarkrog, mortenfaarkrog@gmail.com
+Morten Faarkrog, [@MFaarkrog](https://twitter.com/mfaarkrog)
 
 ## License
 
