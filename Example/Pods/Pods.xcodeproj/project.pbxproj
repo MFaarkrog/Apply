@@ -29,6 +29,7 @@
 		87ECF0EC530D7FFB7B86765DEC889921 /* UIProgressView+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E0D7FADCEADE9706C08BC2E2BC755B /* UIProgressView+Apply.swift */; };
 		91189BFF20C3296CC2E2CB3882A7A571 /* UIControl+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DE1E5C88BCB1F0FE8D9E0BC6DC8E79 /* UIControl+Apply.swift */; };
 		9A6AA1629B4842EDD3E5B8C8F6E239C7 /* UIPageControl+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82C4D369B5779C2FA6709A9CCFE391 /* UIPageControl+Apply.swift */; };
+		9B919D051F1CA47500096D5C /* UIBarButtonItem+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B919D041F1CA47500096D5C /* UIBarButtonItem+Apply.swift */; };
 		A5C4A5C92038F6CECEDBE4C3D2886D0A /* UICollectionView+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFF0DE23FF11CC96B7C599775466DE /* UICollectionView+Apply.swift */; };
 		B6163B18E2FB32F7DE293F0A42EF6C37 /* UIPickerView+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED0A13049DE002CE694192BE54E9D6 /* UIPickerView+Apply.swift */; };
 		B8653EB198EBA148699A608ACBC1AD86 /* UIView+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7758F99418D304632CED3A2AAABB805A /* UIView+Apply.swift */; };
@@ -86,6 +87,7 @@
 		8F3B2B208A1D0C034E725B5A88248AC1 /* Apply.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Apply.modulemap; sourceTree = "<group>"; };
 		926B3811E56FAF9D71E791CA033E8F6A /* UIImageView+Apply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Apply.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B919D041F1CA47500096D5C /* UIBarButtonItem+Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Apply.swift"; sourceTree = "<group>"; };
 		A0E09259160C5DDA976A36C9523C194C /* UIStepper+Apply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStepper+Apply.swift"; sourceTree = "<group>"; };
 		A0FCE6A14B7818451007F33CFD876248 /* Apply-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apply-dummy.m"; sourceTree = "<group>"; };
 		A2A82829477120ED68E4B811FAF9534D /* UIDatePicker+Apply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Apply.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC83E1DC1F43AAD35AAFF0A5FCE3D34 /* UIActivityIndicatorView+Apply.swift */,
+				9B919D041F1CA47500096D5C /* UIBarButtonItem+Apply.swift */,
 				5C674B28AA492B27E2CF69D25A1B86A4 /* UIButton+Apply.swift */,
 				FDBFF0DE23FF11CC96B7C599775466DE /* UICollectionView+Apply.swift */,
 				1AE5EDD63E6A7629EADFF743906E4A9C /* UICollectionViewFlowLayout+Apply.swift */,
@@ -428,6 +431,7 @@
 				F19C117205A7996F0B3A5BF561A5A130 /* UIImageView+Apply.swift in Sources */,
 				81F77A297FF2FAC7F0353235E398C3B4 /* UILabel+Apply.swift in Sources */,
 				DBEDC5BE3CF6ED9717DDD9DC9CDE6A4E /* UINavigationBar+Apply.swift in Sources */,
+				9B919D051F1CA47500096D5C /* UIBarButtonItem+Apply.swift in Sources */,
 				9A6AA1629B4842EDD3E5B8C8F6E239C7 /* UIPageControl+Apply.swift in Sources */,
 				B6163B18E2FB32F7DE293F0A42EF6C37 /* UIPickerView+Apply.swift in Sources */,
 				87ECF0EC530D7FFB7B86765DEC889921 /* UIProgressView+Apply.swift in Sources */,
