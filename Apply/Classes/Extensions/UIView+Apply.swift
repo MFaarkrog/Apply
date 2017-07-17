@@ -101,6 +101,11 @@ public extension UIView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIView>(transform: CGAffineTransform) -> T {
+    self.transform = transform
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIView>(translatesAutoresizingMaskIntoConstraints: Bool) -> T {
     self.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
     return self as! T
