@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 A framework for making it easier to create, change, and maintain the UI of your iOS applications.
+
+To be expanded...
                        DESC
 
   s.homepage         = 'https://github.com/MFaarkrog/Apply'
