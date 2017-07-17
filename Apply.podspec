@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Apply'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A framework for making it easier to create, change, and maintain the UI of your iOS applications.'
 
 # This description is used to generate tags and improve search results.
