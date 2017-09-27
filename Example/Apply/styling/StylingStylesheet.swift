@@ -38,7 +38,6 @@ struct Stylesheet {
     $0.heightAnchor.constraint(equalToConstant: 50).isActive = true
   }
   
-  
   // MARK: - Themes
   private static var `default`: Theme {
     let colors = Theme.Colors(

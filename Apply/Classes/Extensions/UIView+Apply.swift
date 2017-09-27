@@ -22,6 +22,11 @@ public extension UIView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIView>(addSubview subview: UIView) -> T {
+    self.addSubview(subview)
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIView>(alpha: CGFloat) -> T {
     self.alpha = alpha
     return self as! T

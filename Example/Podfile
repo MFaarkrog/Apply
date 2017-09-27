@@ -4,8 +4,6 @@ target 'Apply_Example' do
   pod 'Apply', :path => '../'
 
   target 'Apply_Tests' do
-    inherit! :search_paths
-
-    
+    inherit! :search_paths    
   end
 end

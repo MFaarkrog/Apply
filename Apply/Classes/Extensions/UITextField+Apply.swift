@@ -26,6 +26,11 @@ public extension UITextField {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UITextField>(autocapitalizationType: UITextAutocapitalizationType) -> T {
+    self.autocapitalizationType = autocapitalizationType
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UITextField>(autocorrectionType: UITextAutocorrectionType) -> T {
     self.autocorrectionType = autocorrectionType
     return self as! T
@@ -58,6 +63,11 @@ public extension UITextField {
   
   @discardableResult public func apply<T: UITextField>(delegate: UITextFieldDelegate?) -> T {
     self.delegate = delegate
+    return self as! T
+  }
+  
+  @discardableResult public func apply<T: UITextField>(enablesReturnKeyAutomatically: Bool) -> T {
+    self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
     return self as! T
   }
   

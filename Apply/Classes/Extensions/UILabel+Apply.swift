@@ -16,7 +16,7 @@ public extension UILabel {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UILabel>(text: String) -> T {
+  @discardableResult public func apply<T: UILabel>(text: String?) -> T {
     self.text = text
     return self as! T
   }

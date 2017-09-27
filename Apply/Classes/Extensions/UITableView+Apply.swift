@@ -31,6 +31,11 @@ public extension UITableView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UITableView>(delegate: UITableViewDelegate?) -> T {
+    self.delegate = delegate
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UITableView>(estimatedRowHeight: CGFloat) -> T {
     self.estimatedRowHeight = estimatedRowHeight
     return self as! T

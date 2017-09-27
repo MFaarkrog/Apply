@@ -12,6 +12,16 @@ extension UIStackView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIStackView>(arrangedSubviews subviews: [UIView]) -> T {
+    subviews.forEach { self.addArrangedSubview($0) }
+    return self as! T
+  }
+  
+  @discardableResult public func apply<T: UIStackView>(arrangedSubview subview: UIView) -> T {
+    self.addArrangedSubview(subview)
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIStackView>(axis: UILayoutConstraintAxis) -> T {
     self.axis = axis
     return self as! T

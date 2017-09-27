@@ -11,6 +11,11 @@ public extension UIButton {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIButton>(backgroundImage: UIImage?, forState state: UIControlState) -> T {
+    self.setBackgroundImage(backgroundImage, for: state)
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIButton>(contentEdgeInsets: UIEdgeInsets) -> T {
     self.contentEdgeInsets = contentEdgeInsets
     return self as! T
