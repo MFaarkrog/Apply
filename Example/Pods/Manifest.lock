@@ -1,16 +1,16 @@
 PODS:
-  - Apply (0.0.1)
+  - Apply (0.2.1)
 
 DEPENDENCIES:
   - Apply (from `../`)
 
 EXTERNAL SOURCES:
   Apply:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  Apply: aa06cb740f19ed13a6951cef1a77f98ed262df89
+  Apply: 1f9b861aa5c1e8e408dee97710d4a01723455930
 
-PODFILE CHECKSUM: f7bf0de7281cde1987471776d59b6825ea2ff343
+PODFILE CHECKSUM: a6b12379ab1aae495c1ca494049c60d9da5da305
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

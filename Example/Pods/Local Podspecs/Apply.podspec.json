@@ -1,8 +1,8 @@
 {
   "name": "Apply",
-  "version": "0.0.1",
-  "summary": "Summary coming soon.",
-  "description": "Description coming soon...",
+  "version": "0.2.1",
+  "summary": "A framework for making it easier to create, change, and maintain the UI of your iOS applications.",
+  "description": "A framework for making it easier to create, change, and maintain the UI of your iOS applications.\n\nTo be expanded...",
   "homepage": "https://github.com/MFaarkrog/Apply",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MFaarkrog/Apply.git",
-    "tag": "0.0.1"
+    "tag": "0.2.1"
   },
   "social_media_url": "https://twitter.com/MFaarkrog",
   "platforms": {
