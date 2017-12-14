@@ -41,6 +41,11 @@ public extension UIScrollView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIScrollView>(delegate: UIScrollViewDelegate?) -> T {
+    self.delegate = delegate
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIScrollView>(isPagingEnabled: Bool) -> T {
     self.isPagingEnabled = isPagingEnabled
     return self as! T

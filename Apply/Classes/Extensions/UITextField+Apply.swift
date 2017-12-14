@@ -81,6 +81,11 @@ public extension UITextField {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UITextField>(isSecureTextEntry: Bool) -> T {
+    self.isSecureTextEntry = isSecureTextEntry
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UITextField>(keyboardType: UIKeyboardType) -> T {
     self.keyboardType = keyboardType
     return self as! T

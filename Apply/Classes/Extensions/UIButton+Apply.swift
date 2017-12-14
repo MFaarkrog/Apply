@@ -36,6 +36,12 @@ public extension UIButton {
     return self as! T
   }
   
+  @available(iOS 9.0, *)
+  @discardableResult public func apply<T: UIButton>(semanticContentAttribute: UISemanticContentAttribute) -> T {
+    self.semanticContentAttribute = semanticContentAttribute
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIButton>(title: String, forState state: UIControlState = .normal) -> T {
     self.setTitle(title, for: state)
     return self as! T

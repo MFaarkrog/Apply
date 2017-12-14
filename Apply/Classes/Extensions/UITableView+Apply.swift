@@ -36,6 +36,11 @@ public extension UITableView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UITableView>(dataSource: UITableViewDataSource) -> T {
+    self.dataSource = dataSource
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UITableView>(estimatedRowHeight: CGFloat) -> T {
     self.estimatedRowHeight = estimatedRowHeight
     return self as! T

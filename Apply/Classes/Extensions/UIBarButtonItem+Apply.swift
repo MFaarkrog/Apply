@@ -40,6 +40,11 @@ public extension UIBarButtonItem {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIBarButtonItem>(title: String) -> T {
+    self.title = title
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIBarButtonItem>(backButtonBackgroundImage: UIImage, for controlState: UIControlState, barMetric: UIBarMetrics) -> T {
     self.setBackButtonBackgroundImage(backButtonBackgroundImage, for: controlState, barMetrics: barMetric)
     return self as! T

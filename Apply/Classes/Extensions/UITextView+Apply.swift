@@ -15,7 +15,7 @@ public extension UITextView {
     self.clearsOnInsertion = clearsOnInsertion
     return self as! T
   }
-  
+
   @discardableResult public func apply<T: UITextView>(font: UIFont?) -> T {
     self.font = font
     return self as! T
