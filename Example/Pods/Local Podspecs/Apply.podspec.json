@@ -1,6 +1,6 @@
 {
   "name": "Apply",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "summary": "A framework for making it easier to create, change, and maintain the UI of your iOS applications.",
   "description": "A framework for making it easier to create, change, and maintain the UI of your iOS applications.\n\nTo be expanded...",
   "homepage": "https://github.com/MFaarkrog/Apply",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MFaarkrog/Apply.git",
-    "tag": "0.2.1"
+    "tag": "0.4.0"
   },
   "social_media_url": "https://twitter.com/MFaarkrog",
   "platforms": {
