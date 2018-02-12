@@ -36,7 +36,7 @@ extension UINavigationBar {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UINavigationBar>(titleTextAttributes: [String : Any]?) -> T {
+  @discardableResult public func apply<T: UINavigationBar>(titleTextAttributes: [NSAttributedStringKey : Any]?) -> T {
     self.titleTextAttributes = titleTextAttributes
     return self as! T
   }

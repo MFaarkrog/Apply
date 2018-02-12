@@ -17,7 +17,7 @@ public extension UIView {
   }
   
   // MARK: - Apply
-  @discardableResult public func apply<T: UIView>(style: UIViewStyle<T>) -> T {
+  @discardableResult public func apply<T>(style: UIViewStyle<T>) -> T {
     style.apply(to: self as! T)
     return self as! T
   }

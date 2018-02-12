@@ -129,7 +129,8 @@ public extension UITextField {
   @discardableResult public func apply<T: UITextField>(placeholder: String, placeholderColor color: UIColor, placeholderFont font: UIFont) -> T {
     self.attributedPlaceholder = NSAttributedString(
         string: placeholder,
-        attributes: [NSForegroundColorAttributeName: color, NSFontAttributeName: font])
+        attributes: [.foregroundColor: color,
+                     .font: font])
     return self as! T
   }
   

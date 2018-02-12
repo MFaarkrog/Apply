@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Apply'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A framework for making it easier to create, change, and maintain the UI of your iOS applications.'
 
   s.description      = <<-DESC

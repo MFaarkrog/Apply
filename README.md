@@ -30,10 +30,18 @@ How this could be done can be seen in the Example project.
 
 ## Installation
 
-Apply is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
+Apply is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile.
+
+Swift 4 and onwards:
 
 ```ruby
 pod "Apply"
+```
+
+Swift 3.2:
+
+```ruby
+pod "Apply", '0.3.1'
 ```
 
 
