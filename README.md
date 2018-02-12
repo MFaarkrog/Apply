@@ -41,7 +41,7 @@ pod "Apply"
 Swift 3.2:
 
 ```ruby
-pod "Apply", '0.3.1'
+pod "Apply", '0.3.0'
 ```
 
 
