@@ -82,6 +82,11 @@ public extension UIView {
     self.isUserInteractionEnabled = isUserInteractionEnabled
     return self as! T
   }
+  
+  @discardableResult public func apply<T: UIView>(layoutMargins: UIEdgeInsets) -> T {
+    self.layoutMargins = layoutMargins
+    return self as! T
+  }
 
   @discardableResult public func apply<T: UIView>(origin: CGPoint) -> T {
     self.frame.origin = origin
@@ -116,4 +121,28 @@ public extension UIView {
     return self as! T
   }
   
+}
+
+
+extension UIView {
+  
+  @discardableResult public func apply<T: UIView>(blurEffectViewWithStyle style: UIBlurEffectStyle, alpha: CGFloat = 1) -> T {
+    self.addBlur(withStyle: style, alpha: alpha)
+    return self as! T
+  }
+  
+  func addBlur(withStyle style: UIBlurEffectStyle = UIBlurEffectStyle.dark, alpha: CGFloat = 1.0) {
+    let alphaView = UIView(frame: self.bounds)
+    alphaView.alpha = alpha
+    
+    // Blur View
+    let blurEffect = UIBlurEffect(style: style)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    blurEffectView.frame = alphaView.bounds
+    blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+    
+    // Add views
+    alphaView.addSubview(blurEffectView)
+    self.addSubview(alphaView)
+  }
 }

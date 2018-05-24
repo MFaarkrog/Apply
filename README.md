@@ -199,8 +199,7 @@ Another example where interchangeable themes has been utilized can be seen in th
 
 ## TODO
 
-- Create good examples in the Example project
-- Support new iOS 11 UIKit properties
+- ...
 
 ## Author
 

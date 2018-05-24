@@ -32,8 +32,19 @@ extension UIStackView {
     return self as! T
   }
   
+  @discardableResult public func apply<T: UIStackView>(isLayoutMarginsRelativeArrangement: Bool) -> T {
+    self.isLayoutMarginsRelativeArrangement = isLayoutMarginsRelativeArrangement
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIStackView>(spacing: CGFloat) -> T {
     self.spacing = spacing
+    return self as! T
+  }
+  
+  @available(iOS 11.0, *)
+  @discardableResult public func apply<T: UIStackView>(customSpacing: CGFloat, after view: UIView) -> T {
+    self.setCustomSpacing(customSpacing, after: view)
     return self as! T
   }
   

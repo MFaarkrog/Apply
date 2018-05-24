@@ -16,6 +16,12 @@ public extension UIScrollView {
     return self as! T
   }
   
+  @available(iOS 11.0, *)
+  @discardableResult public func apply<T: UIScrollView>(contentInsetAdjustmentBehavior: UIScrollViewContentInsetAdjustmentBehavior) -> T {
+    self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UIScrollView>(contentInset: UIEdgeInsets) -> T {
     self.contentInset = contentInset
     return self as! T

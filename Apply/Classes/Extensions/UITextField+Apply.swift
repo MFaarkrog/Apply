@@ -160,3 +160,54 @@ public extension UITextField {
   }
   
 }
+
+
+public extension UITextView {
+  
+  public func setLineSpacing(_ lineSpacing: CGFloat) {
+    guard let text = self.text else { return }
+    
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineSpacing = lineSpacing
+    
+    let attributedString: NSMutableAttributedString
+    if let labelAttributedText = self.attributedText {
+      attributedString = NSMutableAttributedString(attributedString: labelAttributedText)
+    } else {
+      attributedString = NSMutableAttributedString(string: text)
+    }
+    
+    // Line spacing attribute
+    attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
+                                  value: paragraphStyle,
+                                  range: NSMakeRange(0, attributedString.length))
+    
+    self.attributedText = attributedString
+  }
+}
+
+
+private extension String {
+  
+  func htmlAttributedString() -> NSAttributedString? {
+    guard let data = self.data(using: String.Encoding.utf16, allowLossyConversion: false) else { return nil }
+    guard let html = try? NSMutableAttributedString(
+      data: data,
+      options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
+      documentAttributes: nil) else { return nil }
+    return html
+  }
+}
+
+
+public extension UITextView {
+  
+  @discardableResult public func apply<T: UITextView>(textAsHTML html: String) -> T {
+    let font = self.font
+    let textColor = self.textColor
+    self.attributedText = html.htmlAttributedString()
+    self.font = font
+    self.textColor = textColor
+    return self as! T
+  }
+}

@@ -5,6 +5,11 @@
 import UIKit
 
 public extension UICollectionViewFlowLayout {
+    
+  @discardableResult public func apply<T: UICollectionViewFlowLayout>(estimatedItemSize: CGSize) -> T {
+    self.estimatedItemSize = estimatedItemSize
+    return self as! T
+  }
   
   @discardableResult public func apply<T: UICollectionViewFlowLayout>(itemSize: CGSize) -> T {
     self.itemSize = itemSize
@@ -30,4 +35,5 @@ public extension UICollectionViewFlowLayout {
     self.scrollDirection = scrollDirection
     return self as! T
   }
+  
 }

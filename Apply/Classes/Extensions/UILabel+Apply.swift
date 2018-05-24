@@ -52,3 +52,35 @@ public extension UILabel {
   }
   
 }
+
+
+public extension UILabel {
+  
+  @discardableResult public func apply<T: UILabel>(text: String, withLineSpacing lineSpacing: CGFloat) -> T {
+    self.apply(text: text)
+    self.setLineSpacing(lineSpacing)
+    
+    return self as! T
+  }
+  
+  public func setLineSpacing(_ lineSpacing: CGFloat) {
+    guard let text = self.text else { return }
+    
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineSpacing = lineSpacing
+    
+    let attributedString: NSMutableAttributedString
+    if let labelAttributedText = self.attributedText {
+      attributedString = NSMutableAttributedString(attributedString: labelAttributedText)
+    } else {
+      attributedString = NSMutableAttributedString(string: text)
+    }
+    
+    // Line spacing attribute
+    attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
+                                  value: paragraphStyle,
+                                  range: NSMakeRange(0, attributedString.length))
+    
+    self.attributedText = attributedString
+  }
+}

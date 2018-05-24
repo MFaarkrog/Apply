@@ -16,6 +16,11 @@ public extension UITextView {
     return self as! T
   }
 
+  @discardableResult public func apply<T: UITextView>(delegate: UITextViewDelegate?) -> T {
+    self.delegate = delegate
+    return self as! T
+  }
+  
   @discardableResult public func apply<T: UITextView>(font: UIFont?) -> T {
     self.font = font
     return self as! T
