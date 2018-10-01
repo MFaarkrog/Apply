@@ -15,7 +15,7 @@ public extension UIBarButtonItem {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIBarButtonItem>(style: UIBarButtonItemStyle) -> T {
+  @discardableResult public func apply<T: UIBarButtonItem>(style: UIBarButtonItem.Style) -> T {
     self.style = style
     return self as! T
   }
@@ -45,7 +45,7 @@ public extension UIBarButtonItem {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIBarButtonItem>(backButtonBackgroundImage: UIImage, for controlState: UIControlState, barMetric: UIBarMetrics) -> T {
+  @discardableResult public func apply<T: UIBarButtonItem>(backButtonBackgroundImage: UIImage, for controlState: UIControl.State, barMetric: UIBarMetrics) -> T {
     self.setBackButtonBackgroundImage(backButtonBackgroundImage, for: controlState, barMetrics: barMetric)
     return self as! T
   }
@@ -60,7 +60,7 @@ public extension UIBarButtonItem {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIBarButtonItem>(backgroundImage: UIImage?, for controlState: UIControlState, barMetric: UIBarMetrics, style: UIBarButtonItemStyle) -> T {
+  @discardableResult public func apply<T: UIBarButtonItem>(backgroundImage: UIImage?, for controlState: UIControl.State, barMetric: UIBarMetrics, style: UIBarButtonItem.Style) -> T {
     self.setBackgroundImage(backgroundImage, for: controlState, style: style, barMetrics: barMetric)
     return self as! T
   }

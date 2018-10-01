@@ -16,7 +16,7 @@ extension UISlider {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UISlider>(maximumTrackImage: UIImage?, for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UISlider>(maximumTrackImage: UIImage?, for state: UIControl.State) -> T {
     self.setMaximumTrackImage(maximumTrackImage, for: state)
     return self as! T
   }
@@ -36,7 +36,7 @@ extension UISlider {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UISlider>(minimumTrackImage: UIImage?, for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UISlider>(minimumTrackImage: UIImage?, for state: UIControl.State) -> T {
     self.setMinimumTrackImage(minimumTrackImage, for: state)
     return self as! T
   }
@@ -61,7 +61,7 @@ extension UISlider {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UISlider>(thumbImage: UIImage, for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UISlider>(thumbImage: UIImage, for state: UIControl.State) -> T {
     self.setThumbImage(thumbImage, for: state)
     return self as! T
   }

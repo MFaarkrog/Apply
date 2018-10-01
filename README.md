@@ -32,11 +32,18 @@ How this could be done can be seen in the Example project.
 
 Apply is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile.
 
-Swift 4 and onwards:
+Swift 4.2 and onwards:
 
 ```ruby
 pod "Apply"
 ```
+
+Swift 4:
+
+```ruby
+pod "Apply", '0.5.0'
+```
+
 
 Swift 3.2:
 

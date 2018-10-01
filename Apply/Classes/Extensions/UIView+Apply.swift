@@ -53,7 +53,7 @@ public extension UIView {
     return self as! T
   }
 
-  @discardableResult public func apply<T: UIView>(contentMode: UIViewContentMode) -> T {
+  @discardableResult public func apply<T: UIView>(contentMode: UIView.ContentMode) -> T {
     self.contentMode = contentMode
     return self as! T
   }
@@ -126,12 +126,12 @@ public extension UIView {
 
 extension UIView {
   
-  @discardableResult public func apply<T: UIView>(blurEffectViewWithStyle style: UIBlurEffectStyle, alpha: CGFloat = 1) -> T {
+  @discardableResult public func apply<T: UIView>(blurEffectViewWithStyle style: UIBlurEffect.Style, alpha: CGFloat = 1) -> T {
     self.addBlur(withStyle: style, alpha: alpha)
     return self as! T
   }
   
-  func addBlur(withStyle style: UIBlurEffectStyle = UIBlurEffectStyle.dark, alpha: CGFloat = 1.0) {
+  func addBlur(withStyle style: UIBlurEffect.Style = UIBlurEffect.Style.dark, alpha: CGFloat = 1.0) {
     let alphaView = UIView(frame: self.bounds)
     alphaView.alpha = alpha
     

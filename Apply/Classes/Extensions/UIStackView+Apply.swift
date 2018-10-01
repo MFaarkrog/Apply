@@ -7,7 +7,7 @@ import UIKit
 @available(iOS 9.0, *)
 extension UIStackView {
   
-  @discardableResult public func apply<T: UIStackView>(alignment: UIStackViewAlignment) -> T {
+  @discardableResult public func apply<T: UIStackView>(alignment: UIStackView.Alignment) -> T {
     self.alignment = alignment
     return self as! T
   }
@@ -22,12 +22,12 @@ extension UIStackView {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIStackView>(axis: UILayoutConstraintAxis) -> T {
+  @discardableResult public func apply<T: UIStackView>(axis: NSLayoutConstraint.Axis) -> T {
     self.axis = axis
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIStackView>(distribution: UIStackViewDistribution) -> T {
+  @discardableResult public func apply<T: UIStackView>(distribution: UIStackView.Distribution) -> T {
     self.distribution = distribution
     return self as! T
   }

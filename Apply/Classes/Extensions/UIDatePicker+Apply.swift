@@ -26,7 +26,7 @@ extension UIDatePicker {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIDatePicker>(datePickerMode: UIDatePickerMode) -> T {
+  @discardableResult public func apply<T: UIDatePicker>(datePickerMode: UIDatePicker.Mode) -> T {
     self.datePickerMode = datePickerMode
     return self as! T
   }

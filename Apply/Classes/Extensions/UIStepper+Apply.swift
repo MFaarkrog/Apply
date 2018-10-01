@@ -6,17 +6,17 @@ import UIKit
 
 extension UIStepper {
   
-  @discardableResult public func apply<T: UIStepper>(backgroundImage: UIImage?,  for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UIStepper>(backgroundImage: UIImage?,  for state: UIControl.State) -> T {
     self.setBackgroundImage(backgroundImage, for: state)
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIStepper>(decrementImage: UIImage?,  for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UIStepper>(decrementImage: UIImage?,  for state: UIControl.State) -> T {
     self.setDecrementImage(decrementImage, for: state)
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIStepper>(incrementImage: UIImage?,  for state: UIControlState) -> T {
+  @discardableResult public func apply<T: UIStepper>(incrementImage: UIImage?,  for state: UIControl.State) -> T {
     self.setIncrementImage(incrementImage, for: state)
     return self as! T
   }

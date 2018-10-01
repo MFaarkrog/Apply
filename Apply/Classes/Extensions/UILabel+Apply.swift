@@ -77,7 +77,7 @@ public extension UILabel {
     }
     
     // Line spacing attribute
-    attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
+    attributedString.addAttribute(NSAttributedString.Key.paragraphStyle,
                                   value: paragraphStyle,
                                   range: NSMakeRange(0, attributedString.length))
     

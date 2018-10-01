@@ -11,8 +11,8 @@ extension UISegmentedControl {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UISegmentedControl>(titleTextAttributes: [AnyHashable : Any]?, for state: UIControlState) -> T {
-    self.setTitleTextAttributes(titleTextAttributes, for: state)
+  @discardableResult public func apply<T: UISegmentedControl>(titleTextAttributes: [AnyHashable : Any]?, for state: UIControl.State) -> T {
+    self.setTitleTextAttributes(titleTextAttributes as? [NSAttributedString.Key : Any], for: state)
     return self as! T
   }
   

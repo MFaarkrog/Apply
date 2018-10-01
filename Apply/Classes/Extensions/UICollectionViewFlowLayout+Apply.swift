@@ -31,7 +31,7 @@ public extension UICollectionViewFlowLayout {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UICollectionViewFlowLayout>(scrollDirection: UICollectionViewScrollDirection) -> T {
+  @discardableResult public func apply<T: UICollectionViewFlowLayout>(scrollDirection: UICollectionView.ScrollDirection) -> T {
     self.scrollDirection = scrollDirection
     return self as! T
   }

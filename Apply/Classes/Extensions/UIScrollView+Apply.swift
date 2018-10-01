@@ -17,7 +17,7 @@ public extension UIScrollView {
   }
   
   @available(iOS 11.0, *)
-  @discardableResult public func apply<T: UIScrollView>(contentInsetAdjustmentBehavior: UIScrollViewContentInsetAdjustmentBehavior) -> T {
+  @discardableResult public func apply<T: UIScrollView>(contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior) -> T {
     self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior
     return self as! T
   }
@@ -38,7 +38,7 @@ public extension UIScrollView {
   }
   
   @discardableResult public func apply<T: UIScrollView>(decelerationRate: CGFloat) -> T {
-    self.decelerationRate = decelerationRate
+    self.decelerationRate = UIScrollView.DecelerationRate(rawValue: decelerationRate)
     return self as! T
   }
   

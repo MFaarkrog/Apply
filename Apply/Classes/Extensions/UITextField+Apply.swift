@@ -41,12 +41,12 @@ public extension UITextField {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITextField>(borderStyle: UITextBorderStyle) -> T {
+  @discardableResult public func apply<T: UITextField>(borderStyle: UITextField.BorderStyle) -> T {
     self.borderStyle = borderStyle
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITextField>(clearButtonMode: UITextFieldViewMode) -> T {
+  @discardableResult public func apply<T: UITextField>(clearButtonMode: UITextField.ViewMode) -> T {
     self.clearButtonMode = clearButtonMode
     return self as! T
   }
@@ -96,7 +96,7 @@ public extension UITextField {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITextField>(leftViewMode: UITextFieldViewMode) -> T {
+  @discardableResult public func apply<T: UITextField>(leftViewMode: UITextField.ViewMode) -> T {
     self.leftViewMode = leftViewMode
     return self as! T
   }
@@ -111,7 +111,7 @@ public extension UITextField {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITextField>(rightViewMode: UITextFieldViewMode) -> T {
+  @discardableResult public func apply<T: UITextField>(rightViewMode: UITextField.ViewMode) -> T {
     self.rightViewMode = rightViewMode
     return self as! T
   }
@@ -178,7 +178,7 @@ public extension UITextView {
     }
     
     // Line spacing attribute
-    attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
+    attributedString.addAttribute(NSAttributedString.Key.paragraphStyle,
                                   value: paragraphStyle,
                                   range: NSMakeRange(0, attributedString.length))
     

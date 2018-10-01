@@ -21,7 +21,7 @@ extension UIProgressView {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UIProgressView>(progressViewStyle: UIProgressViewStyle) -> T {
+  @discardableResult public func apply<T: UIProgressView>(progressViewStyle: UIProgressView.Style) -> T {
     self.progressViewStyle = progressViewStyle
     return self as! T
   }

@@ -96,7 +96,7 @@ public extension UITableView {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITableView>(separatorStyle: UITableViewCellSeparatorStyle) -> T {
+  @discardableResult public func apply<T: UITableView>(separatorStyle: UITableViewCell.SeparatorStyle) -> T {
     self.separatorStyle = separatorStyle
     return self as! T
   }

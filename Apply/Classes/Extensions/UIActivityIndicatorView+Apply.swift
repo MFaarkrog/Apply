@@ -6,8 +6,8 @@ import UIKit
 
 extension UIActivityIndicatorView {
 	
-  @discardableResult public func apply<T: UIActivityIndicatorView>(activityIndicatorViewStyle: UIActivityIndicatorViewStyle) -> T {
-    self.activityIndicatorViewStyle = activityIndicatorViewStyle
+  @discardableResult public func apply<T: UIActivityIndicatorView>(activityIndicatorViewStyle: UIActivityIndicatorView.Style) -> T {
+    self.style = activityIndicatorViewStyle
     return self as! T
   }
   

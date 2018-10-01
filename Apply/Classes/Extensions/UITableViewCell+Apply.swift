@@ -12,7 +12,7 @@ public extension UITableViewCell {
   }
   
   @available(iOS 9.0, *)
-  @discardableResult public func apply<T: UITableViewCell>(focusStyle: UITableViewCellFocusStyle) -> T {
+  @discardableResult public func apply<T: UITableViewCell>(focusStyle: UITableViewCell.FocusStyle) -> T {
     self.focusStyle = focusStyle
     return self as! T
   }
@@ -37,7 +37,7 @@ public extension UITableViewCell {
     return self as! T
   }
   
-  @discardableResult public func apply<T: UITableViewCell>(selectionStyle: UITableViewCellSelectionStyle) -> T {
+  @discardableResult public func apply<T: UITableViewCell>(selectionStyle: UITableViewCell.SelectionStyle) -> T {
     self.selectionStyle = selectionStyle
     return self as! T
   }
