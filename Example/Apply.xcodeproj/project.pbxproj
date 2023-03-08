@@ -49,7 +49,7 @@
 		607FACE51AFB9204008FA782 /* Apply_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Apply_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		72A6FB4BD6B161CFEB603024 /* Apply.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Apply.podspec; path = ../Apply.podspec; sourceTree = "<group>"; };
+		72A6FB4BD6B161CFEB603024 /* Apply.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Apply.podspec; path = ../Apply.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B231FF11EE7F0DC0047B1B1 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9B231FF31EE7F1000047B1B1 /* StylingStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylingStylesheet.swift; sourceTree = "<group>"; };
 		9B23AA3A1EF177DB00B6013A /* UIView+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Convenience.swift"; sourceTree = "<group>"; };
@@ -266,6 +266,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -6,7 +6,7 @@ import UIKit
 
 public extension UIColor {
   
-  @discardableResult public func apply(alpha: CGFloat) -> UIColor {
+  @discardableResult func apply(alpha: CGFloat) -> UIColor {
     return self.withAlphaComponent(alpha)
   }
   
