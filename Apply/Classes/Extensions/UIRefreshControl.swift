@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIRefreshControl {
+public extension UIRefreshControl {
   
-  @discardableResult public func apply<T: UIRefreshControl>(attributedTitle: NSAttributedString?) -> T {
+  @discardableResult func apply<T: UIRefreshControl>(attributedTitle: NSAttributedString?) -> T {
     self.attributedTitle = attributedTitle
     return self as! T
   }

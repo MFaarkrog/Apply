@@ -124,7 +124,7 @@ public extension UIView {
 }
 
 
-extension UIView {
+public extension UIView {
   
   @discardableResult func apply<T: UIView>(blurEffectViewWithStyle style: UIBlurEffect.Style, alpha: CGFloat = 1) -> T {
     self.addBlur(withStyle: style, alpha: alpha)
